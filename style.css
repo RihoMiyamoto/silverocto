@@ -24,7 +24,7 @@ body{
 }
 .main .sidebar{
     position: fixed;
-    width: 200px;
+    width: 15%;
     height: 100%;
     background: #135b9e;
     padding: 30px 0;
