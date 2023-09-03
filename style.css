@@ -93,7 +93,8 @@ body{
     transform: scale(0.9)
 }
 #slime{
-    width: 130px;
+    width: 100px;
+    height: 100px;
 }
 button {
     border: none;
