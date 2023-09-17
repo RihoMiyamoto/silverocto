@@ -1,66 +1,79 @@
-@font-face{
+@font-face {
     src: url(fonts/OpenSans-Medium.ttf);
     font-family: OpenSans;
-} 
-*{
-    margin:0;
-    padding:0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
     font-family: OpenSans;
 }
-body{
+
+body {
     background-color: rgb(235, 244, 250);
 }
-.dark-mode{
+
+.dark-mode {
     background-color: rgb(99, 99, 109);
     color: white;
 
 }
-.main{
+
+.main {
     display: flex;
     position: reslative;
 }
-.main .sidebar{
+
+.main .sidebar {
     position: fixed;
     width: 200px;
     height: 100%;
     background: #135b9e;
     padding: 30px 0;
 }
-.main .sidebar h2{
+
+.main .sidebar h2 {
     color: #fff;
     text-align: center;
     margin-bottom: 30px;
 }
-.main .sidebar ul li{
+
+.main .sidebar ul li {
     padding: 15px;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
-    border-top: 1px solid rgba(225,225,225,0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-top: 1px solid rgba(225, 225, 225, 0.05);
 }
-.main .sidebar ul li a{
+
+.main .sidebar ul li a {
     color: rgb(240, 240, 240);
-    display: block; 
+    display: block;
     text-align: center;
-} 
-.main .sidebar ul li a .button-1{
+}
+
+.main .sidebar ul li a .button-1 {
     width: 25px;
 
-} 
-.main .sidebar ul li:hover{
+}
+
+.main .sidebar ul li:hover {
     background: rgb(55, 138, 190);
-    
-} 
-.main .sidebar ul li:hover a{
+
+}
+
+.main .sidebar ul li:hover a {
     color: rgb(255, 255, 255);
-    
-} 
-.main .main_content{
+
+}
+
+.main .main_content {
     width: 100%;
     margin-left: 200px;
 }
-.main .main_content .header{
+
+.main .main_content .header {
     padding: 20px;
     color: #dcdae3;
     background-color: rgb(76, 76, 78);
@@ -68,17 +81,21 @@ body{
     font-size: 30px;
     text-align: center;
 }
-.main .main_content .info{
+
+.main .main_content .info {
     padding: 20px;
     font-size: 20px;
 }
-.main .main_content .info .description{
+
+.main .main_content .info .description {
     text-align: center;
 }
-.imageMain{
-    width:80%;
+
+.imageMain {
+    width: 80%;
 }
-#image1{
+
+#image1 {
     width: 450px;
     height: 450px;
     border-radius: 120px;
@@ -86,24 +103,130 @@ body{
     object-fit: cover;
     transition: 0.3s;
 }
-#image1:hover{
+
+#image1:hover {
     cursor: pointer
 }
-#image1:active{
+
+#image1:active {
     transform: scale(0.9)
 }
-#slime{
+
+#slime {
     width: 100px;
     height: 100px;
 }
-button {
+
+#slimeButton {
     border: none;
     cursor: pointer;
     appearance: none;
     background-color: inherit;
     padding: 10px 20px;
     float: right;
-  }
-button:active{
+}
+
+button:active {
     transform: scale(0.98);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: white;
+}
+
+button {
+    padding: 8px;
+    margin-top: 8px;
+    margin-left: 10px;
+    outLine: none;
+    cursor: pointer;
+    border: 1px solid rgb(72, 72, 72);
+    border-radius: 5px;
+    background-color: rgb(220, 220, 231);
+}
+
+button:hover {
+    background-color: rgba(15, 7, 58, 0.2);
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+.create-box {
+    width: 380px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: rgb(241, 240, 247);
+    border: 1px solid rgb(53, 53, 53);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.create-box textarea {
+    width: 100%;
+    border-radius: 5px;
+    font-family: inherit;
+    border: 1px solid rgb(117, 114, 124);
+}
+
+.create-box button {
+    width: fit-content;
+
+}
+
+.flashcards {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.flashcard {
+    width: 370px;
+    height: 200px;
+    word-wrap: break-word;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 1px 2px 4px  rgba(0, 0, 0, 0.8);
+}
+
+.flashcard h2 {
+    font-size: 1rem;
+}
+
+@media(max-width: 768px) {
+    .flashcard {
+        margin: auto;
+    }
+
+    .flashcard {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 488px) {
+    .create-box {
+        width: 100%;
+    }
+
+    .flashcard {
+        width: 100%;
+    }
 }
