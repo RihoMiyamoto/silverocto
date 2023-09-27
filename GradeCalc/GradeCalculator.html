@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js"></script>
+  <title>Grade Calculator</title>
+  
+</head>
+
+<body>
+  <div id="header">
+    <h2 id="title">Grade Calculator</h2>
+    <p>
+      This website will calculate your GPA and your average, then color code it
+      based on your goals.
+    </p>
+  </div>
+  <div id="grade_point_scale">
+    <form id="GPAscale">
+      <p>Select the GPA scale you will be using:</p>
+      <div>
+        <input type="radio" id="five" name="scale" value="five">
+        <label for="prog">5.0 Scale</label>
+        <input type="radio" id="six" name="scale" value="six">
+        <label for="prog">6.0 Scale</label>
+      </div> 
+    </form>
+  <br>
+  <hr><br> <!--Class name (optional)Grading scaleScore (out of 100)-->
+  <label for ="">Grades:</label>
+  <br>
+  <input type ="text" placeholder="Enter Grade" id= "class1" name="" onkeyup="mult(this.value);"><br>
+  <input type ="text" placeholder="Enter Grade" id= "class2" name="" onkeyup="mult(this.value);"><br>
+  <input type ="text" placeholder="Enter Grade" id= "class3" name="" onkeyup="mult(this.value);"><br>
+  <input type ="text" placeholder="Enter Grade" id= "class4" name="" onkeyup="mult(this.value);"><br>
+  <input type ="text" placeholder="Enter Grade" id= "class5" name="" onkeyup="mult(this.value);"><br>
+  <input type ="text" placeholder="Enter Grade" id= "class6" name="" onkeyup="mult(this.value);"><br>
+
+  <br><br>
+  <label for="">Average:</label><br>
+  <input type ="text" id="output" name="" ><br>
+  <label for="">GPA Average:</label><br>
+  <input type ="text" id="gpa" name="" >
+  <input type="button" onClick="reset()" Value="Reset" />
+  </div>
+</body>
+
+</html>
