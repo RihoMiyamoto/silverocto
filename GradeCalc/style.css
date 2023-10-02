@@ -4,23 +4,34 @@ body {
     background-color: white;
     font-family: 'Roboto', sans-serif;
     padding: 50px;
-}
-
-header {
-    background-color:aqua;
+    align-items: center;
+    
 }
 
 input[type=text]{
-    margin: 5px 0;
     padding: 5px;
+    margin-bottom: 10px;
     border-radius:10px;
     border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 #grade_point_scale {
+    display: flex;
     box-shadow: 1px 1px 4px  rgba(0, 0, 0, 0.9);
-    padding: 15px;
+    padding: 20px;
     border-radius: 5px;
     margin: 5px 5px;
+    justify-content: space-around;
+}
+#forms{
     flex-wrap: wrap;
+    
+}
+#colorChange {
+    padding: 1.5em;
+    line-height: 1.5;
+    border-radius: 10px;
 }
