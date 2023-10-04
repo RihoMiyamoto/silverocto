@@ -8,7 +8,7 @@ function mult(value) {
     i = document.getElementById("class5").value / 6;
     s = document.getElementById("class6").value / 6;
     average = o + t + h + f + i + s;
-    average = Math.round(average * 100) / 100;
+    average = (Math.round(average * 100) / 100).toFixed(2);
     changeColor(average);
     document.getElementById('output').value = average;
 

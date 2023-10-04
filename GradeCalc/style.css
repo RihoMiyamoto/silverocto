@@ -17,7 +17,6 @@ input[type=text]{
     flex-direction: column;
     
 }
-
 #grade_point_scale {
     display: flex;
     box-shadow: 1px 1px 4px  rgba(0, 0, 0, 0.9);
