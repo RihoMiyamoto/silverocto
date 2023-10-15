@@ -24,9 +24,13 @@ body {
     padding-left: 20px;
     padding-bottom: 20px;
 }
-
-
-
+#skype{
+    font-size: 1.25em;
+}
+#microsoft{
+    max-width: 100px;
+    height: auto;
+}
 .Products,
 .Get-Help,
 .signin {
@@ -197,4 +201,21 @@ body {
     justify-content: last baseline;
     text-decoration: none;
     color: #0078ca;
+}
+
+.page2 .links{
+    width: fit-content;
+    margin: 100px 0 0 50px;
+    font-weight: 100;
+    font-size: 1em;
+}
+.page2 .links ul{
+    display: flex;
+}
+.page2 .links ul li{
+    list-style: none;
+    margin-right: 20px;
+}
+.page2 .links ul li a{
+    color: black;
 }
