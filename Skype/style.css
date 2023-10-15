@@ -9,7 +9,7 @@
 body {
     font-family: "Roboto", sans-serif;
     background-color: white;
-    min-height: 400vh;
+    min-height: 300vh;
 }
 
 .dropdown, .left-side, .right-side {
@@ -103,7 +103,7 @@ body {
     background-color: rgb(241, 241, 241);
     width: auto;
     display: flex;
-    max-height: 100vh;
+    height: auto;
     padding: 110px;
     margin: 0 70px 0 70px;
     border-radius: 0 50px 50px 50px;
@@ -155,5 +155,13 @@ body {
 }
 
 .page1 .pageoneIMG #skypeimg{
+    display: flex;
+    justify-content: center;
     max-width: 90%;
+}
+
+.page2 h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
 }
